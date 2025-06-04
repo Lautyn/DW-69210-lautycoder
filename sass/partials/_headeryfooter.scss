@@ -1,0 +1,105 @@
+// VARIABLES  
+$verde: #464F34;
+$blanco: #ffffff;
+$negro: #000000;
+$blanco-oscuro: #e0dbdb;
+$footer-color:#182901;
+
+//FUENTES
+$cormorant: 'Cormorant Garamond', serif;
+
+//MIXINS
+@mixin disp-just-c ($disp, $just-c) {
+    display: $disp;
+    justify-content: $just-c;
+}
+
+header {
+    .navbar-collapse {
+        text-align: center;
+  
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+  }
+
+
+    nav {
+    background-color: #1D1D14;
+    width: 60%;
+    margin: 30px auto;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    box-shadow: #1D1D14 0px 0px 20px 0px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: 30px 15px;
+    padding-left: 55px;
+
+    .container {
+        
+
+
+        img:hover {
+            transform: scale(1.2);
+           transition: 0.5s linear;
+        }
+    }
+
+    
+    ul {
+        list-style: none;
+        padding: 35px;
+        gap: 30px;
+        transition: 0.5s linear;
+        cursor: pointer;
+
+        li {
+            font-family: $cormorant;
+            font-size: 1.3rem;
+            color: $blanco;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            
+            
+
+            @media screen and (max-width: 768px) {
+                font-size: 1.1rem;
+            }
+        }
+       
+        li:hover {
+            color:#ffffff;
+            transform: scale(1.2);
+            transition: all 0.3s ease-in-out;
+           
+           
+        }
+    }
+}
+}
+
+footer {
+    background-color:$footer-color ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+
+    p {
+        @include disp-just-c(flex, center);
+        font-size: 1.5rem;
+        font-family: $cormorant;
+        font-style: italic;
+        color: $blanco;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            
+        }
+            
+        
+    }
+}

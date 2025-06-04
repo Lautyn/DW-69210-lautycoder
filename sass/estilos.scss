@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=Limelight&family=Nanum+Myeongjo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+
+// ...existing code...
+@import "partials/headeryfooter";
+
+@import "partials/servicios";
+
+@import "partials/galeria";
+
+@import "partials/contacto";
+
+@import "partials/index";
+
+//ultimo partial mediaQueries
+
+
+
+// VARIABLES  
+$verde: #464F34;
+$blanco: #ffffff;
+$negro: #000000;
+$blanco-oscuro: #e0dbdb;
+$footer-color:#182901;
+
+//FUENTE
+$cormorant: 'Cormorant Garamond', serif;
+
+
+//MIXINS
+@mixin disp-just-c ($disp, $just-c) {
+    display:$disp ;
+    justify-content:$just-c ;
+}
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $cormorant;
+}
+
+body {
+    background-color: $verde;
+}
+
+
+
+ 
+
+
+//ya esta todo el index, siguen las demas paginas, revisar index linkear el script del fondo y acordate del responsive
+         
+
+    
+
+
+
+
+
+
