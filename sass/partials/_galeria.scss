@@ -1,0 +1,41 @@
+// VARIABLES  
+$verde: #464F34;
+$blanco: #ffffff;
+$negro: #000000;
+$blanco-oscuro: #e0dbdb;
+$footer-color:#182901;
+
+//FUENTE
+$cormorant: 'Cormorant Garamond', serif;
+
+
+//MIXINS
+@mixin disp-just-c ($disp, $just-c) {
+    display:$disp ;
+    justify-content:$just-c ;
+}
+
+.carrusel-centro {
+    max-width: 800px;
+    max-height: auto;
+    margin: 0 auto;
+    padding: 0px;
+    box-shadow: #000000 0px 0px 40px 0px;
+    border-color: #000000;
+    transition: all 0.3s linear;
+    margin-bottom: 50px;
+
+    .carousel-item {
+        height: 700px;
+        object-fit: cover;
+    }
+
+    &:hover {
+        box-shadow: #ffffff88 0px 0px 20px 0px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.582);
+    }
+}
+
+
+
