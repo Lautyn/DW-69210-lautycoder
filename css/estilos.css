@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=Limelight&family=Nanum+Myeongjo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 header .navbar-collapse {
   text-align: center;
 }
@@ -94,25 +95,103 @@ footer p {
      object-fit: cover;
 }
 
-.carrusel-centro {
-  max-width: 800px;
-  max-height: auto;
-  margin: 0 auto;
-  padding: 0px;
-  box-shadow: #000000 0px 0px 40px 0px;
-  border-color: #000000;
-  transition: all 0.3s linear;
-  margin-bottom: 50px;
+.fondo-chicas {
+  background-color: #e0dbdb;
 }
-.carrusel-centro .carousel-item {
-  height: 700px;
+.fondo-chicas h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  color: #464F34;
+  font-family: "Cormorant Garamond", serif;
+}
+.fondo-chicas p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #464F34;
+  margin: 0;
+  padding: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.fondo-salones {
+  background-color: #464F34;
+}
+.fondo-salones h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: "Cormorant Garamond", serif;
+}
+.fondo-salones p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 0;
+  padding: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.fondo-casamientos {
+  background-color: #e0dbdb;
+}
+.fondo-casamientos h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  color: #464F34;
+  font-family: "Cormorant Garamond", serif;
+}
+.fondo-casamientos p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #464F34;
+  margin: 0;
+  padding: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.quince-chicas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+.quince-chicas img {
+  width: 100%;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.carrusel-centro:hover {
-  box-shadow: rgba(255, 255, 255, 0.5333333333) 0px 0px 20px 0px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.582);
+
+.salones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+.salones img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.eventos-casamientos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+.eventos-casamientos img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-textos {
@@ -125,21 +204,49 @@ footer p {
   font-family: "Cormorant Garamond", serif;
 }
 .container-textos h1 {
-  color: #ffffff;
+  color: #464F34;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
-.container-textos p {
-  color: #e0dbdb;
+.container-textos h2 {
+  color: #464F34;
   font-size: 1.5rem;
   text-align: center;
   max-width: 800px;
 }
 
+.container-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+.container-formulario .row {
+  width: 100%;
+}
+.container-formulario p {
+  color: #464F34;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.fondo-contacto-blanco {
+  background-color: #e0dbdb;
+}
+
+@media (max-width: 600px) {
+  .container-formulario p {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
 /* CONTENEDOR PRINCIPAL */
 .container-todo {
-  overflow-x: hidden;
+  width: 100%;
 }
 
 /* SECCION PRINCIPAL */
@@ -321,8 +428,36 @@ footer p {
 
 html {
   font-family: "Cormorant Garamond", serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #464F34;
+  overflow-x: hidden;
+}
+
+#navContenido .navbar-nav {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 200;
+}
+
+@media (max-width: 1024px) {
+  .quince-chicas,
+  .salones,
+  .eventos-casamientos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .quince-chicas,
+  .salones,
+  .eventos-casamientos {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=estilos.css.map */

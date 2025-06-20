@@ -15,27 +15,110 @@ $cormorant: 'Cormorant Garamond', serif;
     justify-content:$just-c ;
 }
 
-.carrusel-centro {
-    max-width: 800px;
-    max-height: auto;
-    margin: 0 auto;
-    padding: 0px;
-    box-shadow: #000000 0px 0px 40px 0px;
-    border-color: #000000;
-    transition: all 0.3s linear;
-    margin-bottom: 50px;
+.fondo-chicas {
+    background-color: $blanco-oscuro;
 
-    .carousel-item {
-        height: 700px;
-        object-fit: cover;
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 2.5rem;
+        color: $verde;
+        font-family: $cormorant;
     }
-
-    &:hover {
-        box-shadow: #ffffff88 0px 0px 20px 0px;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.582);
+    p {
+        text-align: center;
+        font-size: 1.6rem;
+        color: $verde;  
+        margin: 0;
+        padding: 30px;
+        font-family: $cormorant;
+        font-style: italic;
     }
 }
 
+.fondo-salones {
+    background-color: $verde;
 
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 2.5rem;
+        color: $blanco;
+        font-family: $cormorant;
+    }
+    p {
+        text-align: center;
+        font-size: 1.6rem;
+        color: $blanco;  
+        margin: 0;
+        padding: 30px;
+        font-family: $cormorant;
+        font-style: italic;
+    }
+}
+
+.fondo-casamientos {
+    background-color: $blanco-oscuro;
+
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 2.5rem;
+        color: $verde;
+        font-family: $cormorant;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.6rem;
+        color: $verde;  
+        margin: 0;
+        padding: 30px;
+        font-family: $cormorant;
+        font-style: italic;
+    }
+}
+.quince-chicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+.salones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+   
+}
+
+.eventos-casamientos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+  
 

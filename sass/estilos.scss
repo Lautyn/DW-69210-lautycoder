@@ -2,6 +2,8 @@
 
 @import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 // ...existing code...
 @import "partials/headeryfooter";
 
@@ -43,17 +45,45 @@ $cormorant: 'Cormorant Garamond', serif;
 
 html {
     font-family: $cormorant;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: $verde;
-}
-
-
+    overflow-x: hidden;
 
  
 
+}
 
+#navContenido .navbar-nav {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
+
+ 
+
+@media (max-width: 1024px) {
+  .quince-chicas,
+  .salones,
+  .eventos-casamientos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .quince-chicas,
+  .salones,
+  .eventos-casamientos {
+    grid-template-columns: 1fr;
+  }
+}
 //ya esta todo el index, siguen las demas paginas, revisar index linkear el script del fondo y acordate del responsive
          
 
