@@ -15,14 +15,37 @@ $cormorant: 'Cormorant Garamond', serif;
     justify-content:$just-c ;
 }
 
+.fondo-reservar {
+    background-image: url('../../medios/reservar/fondo-reservar.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+h1, h2 {
+  font-family: $cormorant;
+  color: $blanco;
+  text-align: center;
+  margin: 0;
 
- .formulario-contacto-container {
+}
+
+h1 {
+  font-size: 5rem;
+  padding-top: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  padding-bottom: 4rem; 
+}
+
+.formulario-contacto-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  
+  padding: 0 15px; // un poco de padding en los costados para móviles
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $blanco-oscuro;
 }
 
 .formulario-contacto {
@@ -30,6 +53,19 @@ $cormorant: 'Cormorant Garamond', serif;
   max-width: 600px;
 }
 
-main {
-  padding-bottom: 4rem;
+p {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: $negro;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }

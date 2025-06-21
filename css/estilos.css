@@ -420,6 +420,58 @@ footer p {
   width: 80%;
 }
 
+.fondo-reservar {
+  background-image: url("../../medios/reservar/fondo-reservar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  padding-top: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  padding-bottom: 4rem;
+}
+
+.formulario-contacto-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #e0dbdb;
+}
+
+.formulario-contacto {
+  width: 100%;
+  max-width: 600px;
+}
+
+p {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: #000000;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
